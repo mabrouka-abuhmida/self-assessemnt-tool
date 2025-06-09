@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/self-assessemnt-tool/static/css/main.b6763867.css",
+    "main.js": "/self-assessemnt-tool/static/js/main.c68960a7.js",
+    "static/js/488.f33c0b01.chunk.js": "/self-assessemnt-tool/static/js/488.f33c0b01.chunk.js",
+    "static/media/efrait-logo.png": "/self-assessemnt-tool/static/media/efrait-logo.841542ec4266caae9b4b.png",
+    "service-worker.js": "/self-assessemnt-tool/service-worker.js",
+    "index.html": "/self-assessemnt-tool/index.html",
+    "main.b6763867.css.map": "/self-assessemnt-tool/static/css/main.b6763867.css.map",
+    "main.c68960a7.js.map": "/self-assessemnt-tool/static/js/main.c68960a7.js.map",
+    "488.f33c0b01.chunk.js.map": "/self-assessemnt-tool/static/js/488.f33c0b01.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b6763867.css",
+    "static/js/main.c68960a7.js"
+  ]
+}

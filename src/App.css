@@ -1,0 +1,255 @@
+body, .App {
+  background: #f7f7f7;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #222;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.front-sheet, .parent-info-form {
+  background: #fff;
+  max-width: 500px;
+  margin: 40px auto 0 auto;
+  padding: 32px 32px 24px 32px;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+}
+
+.front-sheet h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.front-sheet h2 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+.front-sheet h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.front-sheet ul {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  padding-left: 1.2rem;
+}
+
+.primary-btn {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.7em 2em;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  transition: background 0.2s;
+}
+.primary-btn:hover {
+  background: #1742a0;
+}
+.secondary-btn {
+  background: #e5e7eb;
+  color: #222;
+  border: none;
+  border-radius: 8px;
+  padding: 0.7em 2em;
+  font-size: 1rem;
+  margin-left: 1em;
+  cursor: pointer;
+}
+
+.parent-info-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1em;
+}
+.parent-info-form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  gap: 0.3em;
+}
+.parent-info-form input[type="text"],
+.parent-info-form input[type="date"],
+.parent-info-form select {
+  padding: 0.6em 0.9em;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #f9fafb;
+  margin-top: 0.2em;
+}
+.parent-info-form input[type="checkbox"] {
+  margin-right: 0.7em;
+  accent-color: #2563eb;
+}
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1em;
+  margin-top: 1.5em;
+}
+@media (max-width: 600px) {
+  .front-sheet, .parent-info-form {
+    padding: 16px 6px 12px 6px;
+    max-width: 98vw;
+  }
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #f7f7f7;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.questionnaire {
+  background: #fff;
+  max-width: 900px;
+  margin: 40px auto 0 auto;
+  padding: 32px 32px 24px 32px;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+}
+.questionnaire-table {
+  width: 100%;
+  margin-top: 2em;
+  border-radius: 10px;
+  overflow-x: auto;
+  border: 1px solid #e5e7eb;
+}
+.questionnaire-header, .questionnaire-row {
+  display: flex;
+  align-items: stretch;
+}
+.questionnaire-header {
+  background: #f3f4f6;
+  font-weight: 600;
+  border-bottom: 1px solid #e5e7eb;
+}
+.questionnaire-row {
+  border-bottom: 1px solid #e5e7eb;
+}
+.questionnaire-row:last-child {
+  border-bottom: none;
+}
+.question-col {
+  flex: 2 1 350px;
+  padding: 1em 1em 1em 0.5em;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.question-sub {
+  font-size: 0.95em;
+  color: #6b7280;
+  margin-top: 0.2em;
+}
+.scale-col {
+  flex: 1 1 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5em 0.2em;
+}
+.questionnaire input[type="radio"] {
+  accent-color: #2563eb;
+  width: 1.2em;
+  height: 1.2em;
+}
+@media (max-width: 900px) {
+  .questionnaire {
+    padding: 12px 2px 12px 2px;
+    max-width: 99vw;
+  }
+  .questionnaire-table {
+    font-size: 0.97em;
+  }
+  .question-col {
+    min-width: 180px;
+  }
+  .scale-col {
+    min-width: 60px;
+  }
+}
+
+.thank-you {
+  background: #fff;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 40px 32px 32px 32px;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.thank-you-logo {
+  display: block;
+  margin: 0 auto 24px auto;
+  max-width: 220px;
+  width: 60%;
+  height: auto;
+}
+.thank-you-title {
+  color: #2563eb;
+  margin-bottom: 1em;
+  font-weight: 700;
+  font-size: 1.4em;
+}
+.thank-you p {
+  font-size: 1.1em;
+  color: #333;
+  margin-bottom: 0.5em;
+}
+.thank-you .primary-btn {
+  margin: 0 auto;
+}
+
+.efrait-logo {
+  display: block;
+  margin: 0 auto 24px auto;
+  max-width: 340px;
+  width: 80%;
+  height: auto;
+}
